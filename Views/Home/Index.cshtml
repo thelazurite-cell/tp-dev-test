@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="content-holder" class="text-center">
+    <h1 class="display-4">Image Upload Test</h1>
+    <file-uploader></file-uploader>
+    <el-button>Default</el-button>
+</div>
+@section Scripts {
+    <script src="./js/vue-components/file-uploader.js"></script>
+    <script>
+        new Vue({ el: '#content-holder' });
+    </script>
+}
